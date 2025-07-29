@@ -26,13 +26,13 @@ const slides = [
 export default function Home() {
   return (
     <>
-      <div className="min-h-screen min-w-screen bg-[#4c874d] items-center">
-        <Header />
-        <main className="max-w-full pt-40 px-4 overflow-x-auto text-center items-center">
-          <h1 className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
+      <div className="min-h-screen min-w-screen bg-[#ffdfba] items-center">
+        <Navbar />
+        <main className="max-w-full pt-20 px-4 overflow-x-auto text-center items-center">
+          <h1 className="text-black text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
             "HEALTH IS EVERYBODY'S BUSINESS"
           </h1>
-          <h3 className="text-white font-semibold text-2xl">
+          <h3 className="text-black font-semibold text-2xl">
             A project co-financed by a loan from the Asian Development Bank and a grant from the Australian Government
           </h3>
           <Swiper
@@ -67,7 +67,7 @@ export default function Home() {
               </SwiperSlide>
             ))}                        
           </Swiper>
-          <p className="text-white max-w-3xl mx-auto mt-6 text-lg leading-relaxed">
+          <p className="text-black max-w-3xl mx-auto mt-6 text-lg leading-relaxed">
             Welcome to the official website of the Health Services Sector Development Project (HSSDP). 
             Our mission is to enhance the health services in our community through innovative projects and initiatives.
           </p>
