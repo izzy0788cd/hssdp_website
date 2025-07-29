@@ -12,7 +12,7 @@ export default function Header() {
           <img
             src={pngEmblem}
             alt="national emblem"
-            className="h-20 w-20 object-contain"
+            className="h-24 w-24 object-contain"
           />
           <span className="text-black font-bold text-2xl whitespace-nowrap">
             Health Services Sector Development Project
