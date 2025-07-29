@@ -33,7 +33,7 @@ export default function Home() {
             "HEALTH IS EVERYBODY'S BUSINESS"
           </h1>
           <h3 className="text-white font-semibold text-2xl">
-            "HEALTH IS EVERYBODY'S BUSINESS"
+            A project co-financed by a loan from the Asian Development Bank and a grant from the Australian Government
           </h3>
           <Swiper
             modules={[Autoplay, Navigation, Pagination, EffectCoverflow]}
