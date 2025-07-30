@@ -1,9 +1,10 @@
 import React from "react";
 import pngEmblem from "../assets/pictures/png_Emblem.png";
+import Navbar from "./Navbar";
 
 export default function Header() {
   return (
-    <header className="bg-[#3a6e3c] shadow-md fixed top-0 left-0 w-full z-50">
+    <header className="bg-[#3a6e3c] shadow-md fixed top-0 left-0 w-full z-50 flex items-center">
       <div className="max-w-screen-xl mx-auto px-4 py-3 flex items-center justify-between flex-wrap">
         
         {/* Left side: logo + text */}
@@ -18,6 +19,7 @@ export default function Header() {
           </span>
         </div>
       </div>
+      <Navbar />
     </header>
   );
 }

@@ -27,8 +27,8 @@ export default function Home() {
   return (
     <>
       <div className="min-h-screen min-w-screen bg-[#ffdfba] items-center">
-        <Navbar />
-        <main className="max-w-full pt-20 px-4 overflow-x-auto text-center items-center">
+        <Header />
+        <main className="max-w-full pt-[100px] px-4 overflow-x-auto text-center items-center">
           <h1 className="text-black text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
             "HEALTH IS EVERYBODY'S BUSINESS"
           </h1>
