@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar.jsx';
 
-import Home from './pages/home.jsx';
+import Home from './pages/Home.jsx';
+import About from "./pages/About.jsx";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </main>
     </>
