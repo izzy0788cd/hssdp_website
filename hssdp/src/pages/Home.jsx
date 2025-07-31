@@ -23,7 +23,7 @@ const slides = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#ffdfba] flex flex-col">
+    <div className="min-h-screen bg-white flex flex-col">
       <Header />
       <main className="flex-1 pt-24 sm:pt-32 px-4 text-center">
         <h1 className="text-black text-xl sm:text-2xl lg:text-4xl font-bold mb-4">
@@ -38,6 +38,7 @@ export default function Home() {
           spaceBetween={10}
           slidesPerView={1}
           loop={true}
+          speed={2000}
           effect="coverflow"
           coverflowEffect={{
             rotate: -50,

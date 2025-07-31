@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 export default function About() {
     return (
-        <div className="flex flex-col min-h-screen bg-[#ffdfba] text-black">
+        <div className="flex flex-col min-h-screen bg-white text-black">
             <Header />
 
             <main className="flex-grow px-6 md:px-12 lg:px-24 pt-28 pb-12 max-w-5xl mx-auto">
