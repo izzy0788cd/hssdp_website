@@ -11,7 +11,7 @@ export default function Navbar() {
       <nav className="hidden md:flex space-x-6 text-white text-base font-medium">
         <Link to="/" className="hover:text-blue-200 transition-colors">Home</Link>
         <Link to="/about" className="hover:text-blue-200 transition-colors">About</Link>
-        <Link to="/activities" className="hover:text-blue-200 transition-colors">Current Activities</Link>
+        <Link to="/activities" className="hover:text-blue-200 transition-colors">Activities</Link>
         <Link to="/resources" className="hover:text-blue-200 transition-colors">Resources</Link>
         <Link to="/contact" className="hover:text-blue-200 transition-colors">Contact</Link>
       </nav>
@@ -19,7 +19,7 @@ export default function Navbar() {
       {/* Hamburger Icon */}
       <button
         onClick={() => setIsOpen(true)}
-        className="md:hidden text-white z-30 relative"
+        className="md:hidden text-white z-30 relative ml-2"
         aria-label="Open menu"
       >
         <Menu className="w-7 h-7" />
@@ -33,9 +33,9 @@ export default function Navbar() {
         ></div>
       )}
 
-      {/* Slide-in Menu */}
+      {/* Slide-in Mobile Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-[#3a6e3cb3] backdrop-blur-md border-l border-white/20 shadow-2xl z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 h-full w-64 bg-[#173d73]/80 backdrop-blur-md border-l border-white/20 shadow-2xl z-50 transform transition-transform duration-300 ease-in-out ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -58,10 +58,10 @@ export default function Navbar() {
         </div>
 
         {/* Navigation Links */}
-        <div className="px-6 pb-6 flex flex-col space-y-4 text-base font-medium">
+        <div className="px-6 pb-6 flex flex-col space-y-4 text-base font-medium text-white">
           <Link to="/" onClick={() => setIsOpen(false)} className="hover:text-yellow-300 transition-all">Home</Link>
           <Link to="/about" onClick={() => setIsOpen(false)} className="hover:text-yellow-300 transition-all">About</Link>
-          <Link to="/activities" onClick={() => setIsOpen(false)} className="hover:text-yellow-300 transition-all">Current Activities</Link>
+          <Link to="/activities" onClick={() => setIsOpen(false)} className="hover:text-yellow-300 transition-all">Activities</Link>
           <Link to="/resources" onClick={() => setIsOpen(false)} className="hover:text-yellow-300 transition-all">Resources</Link>
           <Link to="/contact" onClick={() => setIsOpen(false)} className="hover:text-yellow-300 transition-all">Contact</Link>
         </div>

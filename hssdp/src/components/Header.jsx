@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 
 export default function Header() {
   return (
-    <header className="bg-[#3a6e3c] shadow-md fixed top-0 left-0 w-full z-50">
+    <header className="bg-[#173d73]/95 transition-opacity duration-300 shadow-md fixed top-0 left-0 w-full z-50">
       <div className="max-w-screen-xl mx-auto px-4 py-3 flex items-center justify-between">
         
         {/* Logo + Text */}
@@ -14,9 +14,9 @@ export default function Header() {
             alt="National emblem"
             className="h-20 w-20 object-contain"
           />
-          <span className="text-white font-bold text-xl sm:text-2xl md:text-3xl leading-tight">
+          <h1 className="text-white font-bold text-xl sm:text-2xl md:text-3xl leading-tight">
             Health Services Sector Development Project
-          </span>
+          </h1>
         </div>
 
         {/* Navbar (including hamburger) */}
