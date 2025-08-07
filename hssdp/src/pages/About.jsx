@@ -85,6 +85,13 @@ export default function About() {
                         <li>Patient Referral Systems</li>
                     </ol>
                 </section>
+                <hr />
+                <br/>
+                <section>
+                    <h1 className="text-2xl font-semibold mb-3 text-left">
+                        Partners & Stakeholders
+                    </h1>
+                </section>
             </main>
 
             <Footer />
