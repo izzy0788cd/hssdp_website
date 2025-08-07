@@ -1,11 +1,12 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Navigation, Pagination, EffectCoverflow } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination, EffectCoverflow, EffectFade } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow';
+import 'swiper/css/effect-fade';
 
 import '../styles/style.css';
 import Header from '../components/Header';
@@ -19,6 +20,7 @@ const slides = [
   { src: '/images/slides/slide5.jpg', alt: 'Slide 5' },
   { src: '/images/slides/slide6.jpg', alt: 'Slide 6' },
   { src: '/images/slides/slide7.jpg', alt: 'Slide 7' },
+  { src: '/images/slides/slide8.jpg', alt: 'Slide 8' },
 ];
 
 export default function Home() {
@@ -34,19 +36,13 @@ export default function Home() {
         </h3>
 
         <Swiper
-          modules={[Autoplay, Navigation, Pagination, EffectCoverflow]}
+          modules={[Autoplay, Navigation, Pagination, EffectFade]}
           spaceBetween={10}
           slidesPerView={1}
           loop={true}
-          speed={2000}
-          effect="coverflow"
-          coverflowEffect={{
-            rotate: -50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-          }}
+          speed={3000}
+          effect="fade"
+          fadeEffect={{ crossFade: true }}
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
@@ -73,6 +69,8 @@ export default function Home() {
           Our mission is to enhance the health services in our community through innovative projects and initiatives.
         </p>
       </main>
+      <br />
+      
       <Footer />
     </div>
   );
