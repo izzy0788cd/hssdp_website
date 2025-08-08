@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#173d73] text-white py-6">
+    <footer className="w-full bg-[#173d73] text-white py-20">
       <div className="max-w-screen-xl mx-auto px-4 flex flex-col sm:flex-row justify-between text-sm space-y-4 sm:space-y-0">
         {/* Left: Copyright */}
         <div className="text-center sm:text-left">

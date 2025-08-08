@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 
 export default function Header() {
   return (
-    <header className="bg-[#173d73]/95 transition-opacity duration-300 shadow-md fixed top-0 left-0 w-full z-50">
+    <header className="bg-[#000000]/75 transition-opacity duration-300 shadow-md fixed top-0 left-0 w-full z-50">
       <div className="max-w-screen-xl mx-auto px-4 py-3 flex items-center justify-between">
         
         {/* Logo + Text */}
