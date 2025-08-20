@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
 
@@ -31,12 +32,24 @@ export default function Home() {
           {/* Text Overlay */}
           <div className="absolute z-20 inset-0 sm:w-1/2 flex items-center justify-center sm:justify-start px-5 sm:px-12">
             <div className="text-white text-center sm:text-left max-w-md">
-              <h1 className="text-xl sm:text-3xl md:text-4xl font-bold mb-4 leading-snug">
-                "HEALTH IS EVERYBODY'S BUSINESS"
+              <h1 className="text-xl sm:text-3xl md:text-4xl font-bold text-left mb-4 leading-snug">
+                HEALTH IS EVERYBODY'S BUSINESS
               </h1>
-              <h3 className="text-base sm:text-lg font-semibold">
-                A project co-financed by a loan from the Asian Development Bank and a grant from the Australian Government
+              <h3 className="text-base sm:text-lg font-semibold text-justify mb-6">
+                A project under the National Deaprtment of Health (NDoH), co-financed by loan from the Asian Development Bank (ADB) and a grant from the Australian Government
               </h3>
+                <div className="mt-6 flex flex-col sm:flex-row gap-3">
+                <Link to="/about" className="w-full sm:w-1/2">
+                  <button className="w-full px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300">
+                    About Us
+                  </button>
+                </Link>
+                <Link to="/activities" className="w-full sm:w-1/2">
+                  <button className="w-full px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300">
+                    What We Do
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -53,7 +66,7 @@ export default function Home() {
             effect="fade"
             fadeEffect={{ crossFade: true }}
             autoplay={{
-              delay: 3000,
+              delay: 5000,
               disableOnInteraction: false,
             }}
             pagination={{ clickable: true }}
