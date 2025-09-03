@@ -91,6 +91,13 @@ export default function About() {
                     <h1 className="text-2xl font-semibold mb-3 text-left">
                         Partners & Stakeholders
                     </h1>
+
+                    <ol className="list-disc ml-6 text-base leading-relaxed space-y-1">
+                        <li>Asian Development Bank</li>
+                        <li>Australia's Department of Foreign Affairs & Trade</li>
+                        <li>Government of Papua New Guinea</li>
+                        <li>National Department of Health</li>
+                    </ol>
                 </section>
             </main>
 

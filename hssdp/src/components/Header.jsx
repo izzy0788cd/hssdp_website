@@ -1,5 +1,5 @@
 import React from "react";
-import pngEmblem from "../assets/pictures/png_Emblem.png";
+import pngEmblemHD from "../assets/pictures/pngEmblemHD.png";
 import Navbar from "./Navbar";
 
 export default function Header() {
@@ -10,8 +10,8 @@ export default function Header() {
         {/* Logo + Text */}
         <div className="flex items-center space-x-4 z-10">
           <img
-            src={pngEmblem}
-            alt="National emblem"
+            src={pngEmblemHD}
+            alt="Papua New Guinea Emblem"
             className="h-20 w-20 object-contain"
           />
           <h1 className="text-white font-bold text-xl sm:text-2xl md:text-3xl leading-tight">
