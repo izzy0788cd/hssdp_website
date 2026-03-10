@@ -45,7 +45,7 @@ export default function Contact() {
                     <FaClock className="text-blue-600 mt-1" />
                     <div>
                       <p className="font-semibold">Operating Hours:</p>
-                      <p>Mon–Fri: 8:00 AM – 4:30 PM</p>
+                      <p>Mon–Fri: 8:00 AM – 4:06 PM</p>
                       <p>Closed on weekends & public holidays</p>
                     </div>
                   </div>
